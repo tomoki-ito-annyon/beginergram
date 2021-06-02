@@ -1,0 +1,35 @@
+<% @tweets.each do |tweet| %>
+  <div class="col-md-8 col-md-2 mx-auto">
+    <div class="card-wrap">
+      <div class="card">
+        <%= link_to "#", class: "black-color no-text-decoration",
+          title: tweet.name do %>
+          <strong><%= tweet.name %></strong>
+        <% end %>
+      </div>
+
+      <div class="content_post" style="background-image: url(<%= tweet.image %>);"></div>
+
+      <div class="card-body">
+        <p><%= tweet.text %></p>
+        <div class="row parts">
+          <%= link_to "いいね", "#", class: "love" %>
+          <%= link_to "コメント", "#", class: "comment" %>
+          <%# アイコン等は後ほど行う %>
+        </div>
+        <div class="love-mark"><strong>「いいね！」10件</strong>
+          <%= link_to time_ago_in_words(tweet.created_at).upcase + "前", "#", class: "post-time no-text-decoration" %>
+        </div>
+        <hr>
+        <div class="row parts">
+          <form action="#" class="form">
+            <div class="form-title">
+              <textarea class="form-coment" placeholder="コメント..." rows="1"></textarea>
+            </div>
+            <input type="submit" value="push" class="send">
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>
