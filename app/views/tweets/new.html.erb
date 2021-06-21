@@ -1,0 +1,14 @@
+<div class = "contants row">
+  <div class="container">
+    <%= form_with(model: @tweet, local: true) do |form| %>
+      <%= form.label :name %>
+      <%= form.text_field :name, placeholder: "", size: 5 %>
+      <%= form.label :caption %>
+      <%= form.text_field :image, placeholder: "Image Url" %>
+      <%= form.label :title %>
+      <%= form.text_field :text, placeholder: "" %>
+      <%= form.submit "投稿", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>
+<%# 次回は削除機能を作成まだギット更新していない %>

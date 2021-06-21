@@ -18,13 +18,13 @@
 }
 
 .card-body {
-  background-color: aliceblue;
+  background-color:white;
   margin-left: 100px;
   margin-right: 100px;
 }
 
 .post-time {
-  background-color: aliceblue;
+  background-color: white;
 }
 
 // .post-profile-icon {
@@ -36,7 +36,7 @@
 
 .parts {
   margin: 12px 0;
-  background-color: aliceblue;
+  background-color: white;
 }
 
 .love {
@@ -67,14 +67,32 @@ display: flex;
 
 .form {
   display: flex;
+  height: 80px;
+
 }
 
 .form-title {
+  margin-left: 5px;
+}
 
+.form-comment {
+  border: none;
+  width: 80vw;
 }
 
 .send {
   margin-left: 10px;
   border: 1px solid grey;
-  height: 25px;
+  height: 35px;
+}
+
+.contants {
+  height: 300px;
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  text-align: center;
+  margin-top: 125px;
 }
