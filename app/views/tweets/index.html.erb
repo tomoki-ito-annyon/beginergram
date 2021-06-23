@@ -6,6 +6,10 @@
           title: tweet.name do %>
           <strong><%= tweet.name %></strong>
         <% end %>
+        <%= link_to tweet_path(tweet.id), method: :delete, class: "ml-auto mx-0 my-auto" do %>
+          <div class="delete-post-icon">
+          </div>
+        <% end %>
       </div>
 
       <div class="content_post" style="background-image: url(<%= tweet.image %>);"></div>

@@ -8,6 +8,8 @@
 
 .card {
   margin-left: 100px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .content_post {
@@ -37,24 +39,25 @@
 .parts {
   margin: 12px 0;
   background-color: white;
+  
 }
 
 .love {
   margin-left: 8px;
-  background-image: url("~parts5");
+  background-image: url("parts5.png");
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
-  background-size: 36px !important;
+  background-size: 17px !important;
 }
 
 .comment {
   margin-left: 8px;
-  background-image: url("~parts6");
+  background-image: url("parts6.png");
   background-repeat: no-repeat;
   height: 36px;
   width: 36px;
-  background-size: 40px !important;
+  background-size: 17px !important;
 }
 
 .love-mark {
@@ -96,3 +99,14 @@ display: flex;
   text-align: center;
   margin-top: 125px;
 }
+
+.delete-post-icon {
+  background-image: url("parts9.png");
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 30px !important;
+  color: #262626;
+  margin-right: 100px;
+}
+
