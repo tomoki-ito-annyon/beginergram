@@ -1,0 +1,12 @@
+<div class="edit-contents">
+  <div class="edit-contents-title">
+    <h3>編集する</h3>
+    <%= form_with(model: @tweet, local: true) do |form| %>
+      <%= form.text_field :name, placeholder: "Nickname", class: "edit-nickname" %>
+      <%= form.text_field :image, placeholder: "Image Url", class: "edit-imageUrl" %>
+      <%= form.text_area :text, placeholder: "text", rows: "10", class: "edit-text" %>
+      <%= form.submit "SEND", class: "edit-send" %>
+    <% end %>
+  </div>
+</div>
+<%# 編集機能完了コミットして新しく詳細機能ブランチを作る %>
