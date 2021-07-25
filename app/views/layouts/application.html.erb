@@ -13,9 +13,18 @@
     <header class="header">
       <div class="header-top">
         <h1 class="header-title"><a href="/">Beginergram</a></h1>
-        <div class="header-right">
-          <a class="post"href="/">投稿する</a>
-        </div>
+        <% if user_signed_in? %>
+          <div class="header-righ">
+            <%= link_to "マイページ", "/users/#{current_user.id}" %>
+            <%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "post" %>
+            <%= link_to "投稿する", new_tweet_path, class: "post-2" %>
+          </div>
+        <% else %>
+          <div class="header-righ">
+            <%= link_to "ログイン", new_user_session_path, class: "post" %>
+            <%= link_to "新規登録", new_user_registration_path, class: "post-2" %>
+          </div>
+        <% end %>
       </div>
     </header>
     <body>

@@ -1,0 +1,54 @@
+.main {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 90%;
+  padding: 100px 75px 100px;
+  display: block;
+  flex: 1;
+  flex-basis: auto;
+  box-sizing: border-box;
+}
+
+.devise-contants {
+  border: none;
+  background-color: white;
+}
+
+.form-wrap{
+  max-width: 400px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.content-title {
+  text-align: center;
+  font-family: cursive;
+}
+
+.form-group{
+  text-align: center;
+}
+
+.form-control {
+  border: 1px solid #dcdfe6;
+  font-size: inherit;
+  margin-top: 5px;
+  height: 30px;
+}
+
+.actions {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  color: #dcdfe6;
+  background-color: blue;
+  width: 435px;
+}
+
+.devise-link {
+  text-align: center;
+}
+
+
